@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0F172A;
+    color: #E2E8F0;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0F172A;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3B82F6;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #14B8A6;
+  }
+}
+
+@layer components {
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-2.5 rounded-lg text-slate-400 hover:text-white hover:bg-white/5 transition-all duration-200 text-sm font-medium cursor-pointer;
+  }
+
+  .sidebar-link.active {
+    @apply text-accent bg-accent/10 border-l-2 border-accent;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-bold text-white mb-2;
+  }
+
+  .section-subtitle {
+    @apply text-slate-400 text-sm mb-8;
+  }
+
+  .card {
+    @apply bg-navy-card border border-white/5 rounded-xl p-6 hover:border-accent/30 transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-accent hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 flex items-center gap-2;
+  }
+
+  .btn-outline {
+    @apply border border-teal/50 hover:border-teal text-teal hover:bg-teal/10 font-semibold px-6 py-3 rounded-lg transition-all duration-200 flex items-center gap-2;
+  }
+
+  .tag {
+    @apply bg-accent/10 text-accent text-xs px-3 py-1 rounded-full font-mono border border-accent/20;
+  }
+
+  .tag-teal {
+    @apply bg-teal/10 text-teal text-xs px-3 py-1 rounded-full font-mono border border-teal/20; 
+  }
+}
+
+/* Typing animation */
+.typing-cursor::after {
+  content: '|';
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Noise texture overlay */
+.noise-bg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.015;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+/* Glow effects */
+.glow-accent {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.glow-teal {
+  box-shadow: 0 0 20px rgba(20, 184, 166, 0.3);
+}
+
+/* Section animations */
+.section-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile sidebar */
+.sidebar-overlay {
+  backdrop-filter: blur(4px);
+}
+
+/* Progress bar animation */
+@keyframes progressFill {
+  from { width: 0%; }
+  to { width: var(--progress); }
+}
+
+.progress-fill {
+  animation: progressFill 1.2s ease forwards;
+  animation-delay: 0.3s;
+  width: 0%;
+}
+
+/* Hero grid background */
+.hero-grid {
+  background-image: 
+    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Timeline */
+.timeline-line {
+  position: relative;
+}
+
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #3B82F6, #14B8A6);
+}
+
+/* Certificate card hover */
+.cert-card:hover .cert-icon {
+  transform: scale(1.1) rotate(5deg);
+  transition: transform 0.3s ease;
+}
