@@ -254,6 +254,7 @@ This project is open-source and free to use for personal portfolios.
 <div align="center">
   <p>Built with ❤️ by <strong>Priya G</strong></p>
   <p>EEE Student · AI & IoT Developer · Python Developer</p>
+  <a href="https://priya-11.netlify.app/">Portfolio Link(depolyed)</a> ·
   <a href="https://www.linkedin.com/in/priya-g-07422429a/">LinkedIn</a> ·
   <a href="https://github.com/priyagowda11-jpg/">GitHub</a> ·
   <a href="mailto:priyag11032005@gmail.com">Email</a>
