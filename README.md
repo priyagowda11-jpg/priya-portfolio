@@ -1,6 +1,16 @@
 # 🚀 Priya G — Personal Portfolio Website
 
-A **modern, professional developer portfolio** built with **React + Vite + Tailwind CSS**, featuring a fixed left sidebar navigation, dark theme, smooth animations, and full responsiveness.
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Netlify-00C7B7?style=for-the-badge)](https://priya-11.netlify.app/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38BDF8?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com)
+[![Python](https://img.shields.io/badge/Python-Developer-yellow?style=for-the-badge&logo=python)](https://python.org)
+
+> **A modern, professional developer portfolio built with React + Vite + Tailwind CSS, featuring a fixed left sidebar navigation, dark theme, smooth animations, and full responsiveness.**
+
+</div>
 
 ---
 
@@ -22,16 +32,16 @@ A **modern, professional developer portfolio** built with **React + Vite + Tailw
 
 ## 🎨 Design System
 
-| Property        | Value       |
-|----------------|-------------|
-| Background      | `#0F172A`   |
-| Primary Accent  | `#3B82F6`   |
-| Secondary Accent| `#14B8A6`   |
-| Card Background | `#162032`   |
-| Sidebar BG      | `#1E293B`   |
-| Display Font    | Syne        |
-| Body Font       | DM Sans     |
-| Mono Font       | JetBrains Mono |
+| Property         | Value          |
+| ---------------- | -------------- |
+| Background       | `#0F172A`      |
+| Primary Accent   | `#3B82F6`      |
+| Secondary Accent | `#14B8A6`      |
+| Card Background  | `#162032`      |
+| Sidebar BG       | `#1E293B`      |
+| Display Font     | Syne           |
+| Body Font        | DM Sans        |
+| Mono Font        | JetBrains Mono |
 
 ---
 
@@ -67,11 +77,13 @@ priya-portfolio/
 
 ## 🛠️ Tech Stack
 
-- **React 18** — UI library
-- **Vite 5** — Build tool (fast HMR)
-- **Tailwind CSS 3** — Utility-first styling
-- **react-icons** — Icon library
-- **Google Fonts** — Syne, DM Sans, JetBrains Mono
+| Layer          | Technology                                   |
+| -------------- | -------------------------------------------- |
+| **UI Library** | React 18                                     |
+| **Build Tool** | Vite 5 (fast HMR)                            |
+| **Styling**    | Tailwind CSS 3                               |
+| **Icons**      | react-icons                                  |
+| **Fonts**      | Google Fonts — Syne, DM Sans, JetBrains Mono |
 
 ---
 
@@ -80,6 +92,7 @@ priya-portfolio/
 ### Prerequisites
 
 Make sure you have installed:
+
 - **Node.js** v18+ → [nodejs.org](https://nodejs.org)
 - **npm** v9+ (comes with Node)
 
@@ -108,9 +121,7 @@ npm install
 npm run dev
 ```
 
-Open your browser and go to: **http://localhost:5173**
-
-The site auto-reloads whenever you edit files. 🔥
+Open your browser and go to: **http://localhost:5173** 🔥
 
 ---
 
@@ -139,6 +150,7 @@ npm run preview
 3. ✅ Site is live instantly!
 
 Or connect GitHub and enable auto-deploy:
+
 - Build command: `npm run build`
 - Publish directory: `dist`
 
@@ -156,11 +168,13 @@ npm install --save-dev gh-pages
 ```
 
 Add to `package.json` scripts:
+
 ```json
 "deploy": "gh-pages -d dist"
 ```
 
 Then:
+
 ```bash
 npm run build
 npm run deploy
@@ -173,6 +187,7 @@ npm run deploy
 ### 1. Replace Profile Photo
 
 In `src/components/Sidebar.jsx`, find the avatar section and replace with:
+
 ```jsx
 <img
   src="/your-photo.jpg"
@@ -180,15 +195,18 @@ In `src/components/Sidebar.jsx`, find the avatar section and replace with:
   className="w-full h-full rounded-full object-cover"
 />
 ```
+
 Place your photo in the `public/` folder.
 
 ### 2. Add Resume Download
 
 In `src/components/Hero.jsx`, replace the alert with:
+
 ```jsx
-href="/Priya_G_Resume.pdf"
-download
+href = "/Priya_G_Resume.pdf";
+download;
 ```
+
 Place your resume PDF in the `public/` folder.
 
 ### 3. Connect Contact Form to EmailJS
@@ -205,43 +223,48 @@ In `src/components/Projects.jsx`, update the `github` field in the projects arra
 
 ## 🧩 Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server at `localhost:5173` |
-| `npm run build` | Build for production to `dist/` |
-| `npm run preview` | Preview production build locally |
+| Command           | Description                                  |
+| ----------------- | -------------------------------------------- |
+| `npm run dev`     | Start development server at `localhost:5173` |
+| `npm run build`   | Build for production to `dist/`              |
+| `npm run preview` | Preview production build locally             |
 
 ---
 
 ## 📸 Sections Overview
 
-| # | Section | Description |
-|---|---------|-------------|
-| 1 | **Home** | Hero with typing animation, stats, CTA buttons |
-| 2 | **About** | Bio, code snippet card, interest areas |
-| 3 | **Education** | Visual timeline — BE, PU, 10th |
-| 4 | **Skills** | Animated bars — technical + soft skills |
-| 5 | **Internship** | Pantech AI experience details |
-| 6 | **Projects** | AI Fraud Detection + Secure Voting cards |
-| 7 | **Certificates** | 9-certificate grid with icons |
-| 8 | **Contact** | Social links + functional contact form |
+| #   | Section          | Description                                    |
+| --- | ---------------- | ---------------------------------------------- |
+| 1   | **Home**         | Hero with typing animation, stats, CTA buttons |
+| 2   | **About**        | Bio, code snippet card, interest areas         |
+| 3   | **Education**    | Visual timeline — BE, PU, 10th                 |
+| 4   | **Skills**       | Animated bars — technical + soft skills        |
+| 5   | **Internship**   | Pantech AI experience details                  |
+| 6   | **Projects**     | AI Fraud Detection + Secure Voting cards       |
+| 7   | **Certificates** | 9-certificate grid with icons                  |
+| 8   | **Contact**      | Social links + functional contact form         |
 
 ---
 
 ## 🐛 Troubleshooting
 
-**Port already in use?**
-```bash
-npm run dev -- --port 3000
-```
+| Error               | Fix                                                                                                     |
+| ------------------- | ------------------------------------------------------------------------------------------------------- |
+| Port already in use | `npm run dev -- --port 3000`                                                                            |
+| Styles not loading  | Ensure `index.css` is imported in `main.jsx` and Tailwind config points to `./src/**/*.{js,ts,jsx,tsx}` |
+| Icons not showing   | `npm install react-icons`                                                                               |
 
-**Styles not loading?**
-Make sure `index.css` is imported in `main.jsx` and Tailwind config points to `./src/**/*.{js,ts,jsx,tsx}`.
+---
 
-**Icons not showing?**
-```bash
-npm install react-icons
-```
+## 👩‍💻 Author
+
+**Priya G**
+EEE Student · AI & IoT Developer · Python Developer
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/priya-g-07422429a/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/priyagowda11-jpg/)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:priyag11032005@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-black?style=flat&logo=google-chrome)](https://priya-gowda-portfolio.netlify.app)
 
 ---
 
@@ -252,10 +275,5 @@ This project is open-source and free to use for personal portfolios.
 ---
 
 <div align="center">
-  <p>Built with ❤️ by <strong>Priya G</strong></p>
-  <p>EEE Student · AI & IoT Developer · Python Developer</p>
-  <a href="https://priya-11.netlify.app/">Portfolio Link(depolyed)</a> ·
-  <a href="https://www.linkedin.com/in/priya-g-07422429a/">LinkedIn</a> ·
-  <a href="https://github.com/priyagowda11-jpg/">GitHub</a> ·
-  <a href="mailto:priyag11032005@gmail.com">Email</a>
+⭐ If you found this project useful, please star the repository!
 </div>
